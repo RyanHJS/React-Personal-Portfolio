@@ -53,7 +53,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-10 ??S?DA?DS?DA?">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">Ryan He</h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">Computer Science Major</h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-200">
