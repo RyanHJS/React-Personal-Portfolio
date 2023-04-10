@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 html,
 body {
@@ -25,5 +26,6 @@ a {
 
 @font-face {
   font-family: 'burtons';
+  font-family: 'DM Sans', sans-serif;
   src: url('../public/Burtons.otf');
 }
