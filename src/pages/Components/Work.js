@@ -1,9 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Work = () => {
     return (
-        <>
-            <div >
+        <div id='work'>
+            <div>
                 <h3 className='text-3xl font-medium pt-8 pb-2 dark:text-white'>My Work Experience</h3>
                 <h4 className='text-md pt-10 pb-2 leading-8 tet-gray-80 dark:text-gray-200 '>
                     SAP - Software Logistics Engineer (September 2021- May 2022)</h4>
@@ -15,7 +16,7 @@ const Work = () => {
                     join <span className='text-teal-500'>Fast Track</span> -  an initiative of SAP Internship Experience Program,
                     for success, high motivation and commitment during internship/working student time.</p>
             </div>
-        </>
+        </div>
     );
 };
 

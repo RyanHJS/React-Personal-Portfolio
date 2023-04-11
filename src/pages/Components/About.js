@@ -6,6 +6,8 @@ import {
 } from 'react-icons/ai';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import MotionWrap from '../Wrappers/MotionWrap';
+
 
 const About = ({ avatar, Image }) => {
     return (
@@ -64,4 +66,4 @@ const About = ({ avatar, Image }) => {
     );
 };
 
-export default About;
+export default About;;

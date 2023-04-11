@@ -6,6 +6,7 @@ import web1 from '../../public/static/web1.png';
 import web2 from '../../public/static/web2.png';
 import favicon from '../../public/static/favicon.ico';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import Navbar from './Components/Navbar';
 import About from './Components/About';
@@ -37,17 +38,33 @@ export default function Home() {
                 {/* Section 1 */}
                 <section className="min-h-screen">
                     {/* Nav bar */}
-                    <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+                    <motion.div key="navbar" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} Work={Work} />
+                    </motion.div>
                     {/* About me */}
-                    <About Image={Image} avatar={avatar} />
+                    <motion.div key="about" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                        <About Image={Image} avatar={avatar} />
+                    </motion.div>
+
                 </section>
 
                 {/* Section 2 */}
                 <section>
                     {/* My work Experience */}
-                    <Work />
+                    <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                        <Work />
+                    </motion.div>
+                    <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                        <Work />
+                    </motion.div>
+                    <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                        <Work />
+                    </motion.div>
+
                     {/* Portofolio */}
-                    <Projects web1={web1} web2={web2} Image={Image} />
+                    <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                        <Projects web1={web1} web2={web2} Image={Image} />
+                    </motion.div>
                 </section>
 
                 {/* Footer */}
