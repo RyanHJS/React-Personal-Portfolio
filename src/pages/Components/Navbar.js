@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const Navbar = ({ darkMode, setDarkMode, Work }) => {
+const Navbar = ({ darkMode, setDarkMode }) => {
     return (
         <>
             <nav className="py-10 mb-12 flex justify-between dark:text-white">

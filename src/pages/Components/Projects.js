@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = ({ web1, web2, Image }) => {
     return (
-        <>
+        <div id='project' className='min-h-screen'>
             <div>
                 <h3 className='text-3xl  font-medium pt-8 pb-2 dark:text-white'>My Projects</h3>
                 <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -26,7 +26,7 @@ const Projects = ({ web1, web2, Image }) => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

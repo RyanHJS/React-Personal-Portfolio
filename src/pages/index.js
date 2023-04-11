@@ -39,7 +39,7 @@ export default function Home() {
                 <section className="min-h-screen">
                     {/* Nav bar */}
                     <motion.div key="navbar" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} Work={Work} />
+                        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                     </motion.div>
                     {/* About me */}
                     <motion.div key="about" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
@@ -54,13 +54,6 @@ export default function Home() {
                     <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
                         <Work />
                     </motion.div>
-                    <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                        <Work />
-                    </motion.div>
-                    <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                        <Work />
-                    </motion.div>
-
                     {/* Portofolio */}
                     <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
                         <Projects web1={web1} web2={web2} Image={Image} />

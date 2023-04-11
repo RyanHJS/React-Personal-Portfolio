@@ -6,12 +6,10 @@ import {
 } from 'react-icons/ai';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
-import MotionWrap from '../Wrappers/MotionWrap';
-
 
 const About = ({ avatar, Image }) => {
     return (
-        <>
+        <div id='about' className='min-h-screen'>
             <div className="text-center p-10">
                 <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">Hi! My name is Ryan He,</h2>
                 {/* <h3 className="text-2xl py-2 dark:text-white md:text-3xl">Computer Science Major</h3> */}
@@ -62,7 +60,7 @@ const About = ({ avatar, Image }) => {
                     </div>
                 </motion.div>
             </div>
-        </>
+        </div>
     );
 };
 

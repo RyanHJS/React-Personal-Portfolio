@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Work = () => {
     return (
-        <div id='work'>
+        <div id='work' className='min-h-screen'>
             <div>
                 <h3 className='text-3xl font-medium pt-8 pb-2 dark:text-white'>My Work Experience</h3>
                 <h4 className='text-md pt-10 pb-2 leading-8 tet-gray-80 dark:text-gray-200 '>
