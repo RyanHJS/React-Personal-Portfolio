@@ -27,5 +27,5 @@ a {
 @font-face {
   font-family: 'burtons';
   font-family: 'DM Sans', sans-serif;
-  src: url('../public/Burtons.otf');
+  src: url('/Burtons.otf');
 }
