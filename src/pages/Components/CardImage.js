@@ -2,8 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { AiFillGithub } from 'react-icons/ai';
 import { BiLinkExternal } from 'react-icons/bi';
+import Image from 'next/image';
 
-const CardImage = ({ Image, imageSrc, imageCaption, imageTitle, imageBody, tags, showIcons, showcaseLink, githubLink }) => {
+const CardImage = ({ imageSrc, imageCaption, imageTitle, imageBody, tags, showIcons, showcaseLink, githubLink }) => {
     return (
         <>
             <div className='py-5'>
@@ -35,7 +36,7 @@ const CardImage = ({ Image, imageSrc, imageCaption, imageTitle, imageBody, tags,
                             </p>
                         </div>
                         <div class="px-6 pt-4 pb-2">
-                            {tags.map((tag, index) => (
+                            {tags && tags.map((tag, index) => (
                                 <span key={index} class="inline-block bg-gray-200 rounded-full px-4 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                                     #{tag}
                                 </span>

@@ -24,4 +24,4 @@ const About = ({ avatar, Image }) => {
     );
 };
 
-export default About;;
+export default About;

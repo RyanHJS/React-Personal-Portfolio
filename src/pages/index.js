@@ -48,7 +48,7 @@ export default function Home() {
                     <div id='about'>
                         {/* About me */}
                         <motion.div key="about" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                            <About Image={Image} avatar={avatar} />
+                            <About avatar={avatar} />
                         </motion.div>
                     </div>
 
@@ -59,7 +59,7 @@ export default function Home() {
                     <div id='work'>
                         {/* My work Experience */}
                         <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                            <Work Image={Image} sapLogo={sapLogo} />
+                            <Work sapLogo={sapLogo} />
                         </motion.div>
                     </div>
                 </section>
@@ -69,7 +69,7 @@ export default function Home() {
                     <div id='project'>
                         {/* Portofolio */}
                         <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                            <Projects Image={Image} spotify={spotify} medminder={medminder} />
+                            <Projects spotify={spotify} medminder={medminder} />
                         </motion.div>
                     </div>
                 </section>

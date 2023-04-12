@@ -3,7 +3,7 @@ import CardImage from './CardImage';
 import Image from 'next/image';
 
 
-const Projects = ({ Image, spotify, medminder }) => {
+const Projects = ({ spotify, medminder }) => {
     let spotifyProjectTitle = 'Better Spotify';
     let spotifyProjectBody = 'Spotify Web App Clone with Lyrics';
     let spotifyTag1 = 'React.js';
@@ -32,7 +32,6 @@ const Projects = ({ Image, spotify, medminder }) => {
                         <div className="basis-1/3 flex-1 ">
 
                             <CardImage
-                                Image={Image}
                                 imageSrc={spotify}
                                 imageCaption={spotifyProjectTitle}
                                 imageTitle={spotifyProjectTitle}
@@ -46,7 +45,6 @@ const Projects = ({ Image, spotify, medminder }) => {
                         <div className="basis-1/3 flex-1">
 
                             <CardImage
-                                Image={Image}
                                 imageSrc={medminder}
                                 imageCaption={medminderProjectTitle}
                                 imageTitle={medminderProjectTitle}

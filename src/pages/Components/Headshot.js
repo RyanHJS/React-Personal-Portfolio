@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
-const Headshot = ({ avatar, Image }) => {
+const Headshot = ({ }) => {
     return (
         <div>
             <div>
@@ -27,7 +28,7 @@ const Headshot = ({ avatar, Image }) => {
                     md:w-25
                     "
                     >
-                        <Image src={avatar} layout="fill" objectiveFit="cover" alt="" />
+                        <Image src={'/static/avatar.jpeg'} layout="fill" objectiveFit="cover" alt="" />
                     </div>
                 </motion.div>
             </div>

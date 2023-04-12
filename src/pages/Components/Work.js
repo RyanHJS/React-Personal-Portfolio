@@ -3,9 +3,10 @@ import { motion } from 'framer-motion';
 import CardImage from './CardImage';
 import CardText from './CardText';
 import { Cardo } from 'next/font/google';
+import Image from 'next/image';
 
 
-const Work = ({ Image, sapLogo }) => {
+const Work = ({ sapLogo }) => {
 
     let jobTitle = "Software Logistics Engineer (BTP Core Platform Services)";
     let jobDate = "September 2021- May 2022";
@@ -65,4 +66,4 @@ const Work = ({ Image, sapLogo }) => {
     );
 };
 
-export default Work;;
+export default Work;
