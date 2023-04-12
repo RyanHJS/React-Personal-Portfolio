@@ -16,7 +16,7 @@ const Icons = () => {
                     </a>
                 </motion.div>
                 <motion.div whileInView={{ opacity: 1 }} whileHover={{ scale: 1.1 }} transition={{ duration: 0.5, type: 'tween' }}>
-                    <a href='https://github.com/RyanHJS/' target="_blank">
+                    <a href='https://github.com/RyanHJS/' target="_blank rel=“noreferrer”">
                         <AiFillGithub className='cursor-pointer hover:bg-cyan-300 rounded-full' />
                     </a>
                 </motion.div>
