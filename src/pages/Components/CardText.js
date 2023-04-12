@@ -11,12 +11,12 @@ const CardText = ({ textTitle, textBody }) => {
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.1, ease: 'easeInOut' }}
                 >
-                    <div class="max-w-xl bg-white px-10 dark:bg-gray-800 shadow-2xl rounded-lg overflow-hidden max-h-fit">
+                    <div class="max-w-xl bg-white px-15 dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden max-h-fit">
 
-                        <div class="px-6 py-4">
+                        <div class="px-6">
                             <div class="font-bold text-xl mb-2 text-gray-800 dark:text-white"> {textTitle ? textTitle : ""}
                             </div>
-                            <p class="text-gray-800 text-base dark:text-white">
+                            <p class="text-gray-800 text-base text-center dark:text-white">
                                 {textBody}
                             </p>
                         </div>

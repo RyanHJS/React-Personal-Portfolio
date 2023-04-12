@@ -77,7 +77,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                             >
                                 <a
                                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                                    href='#work'
+                                    href='/static/resume.pdf'
                                 >
                                     Resume
                                 </a>

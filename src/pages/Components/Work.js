@@ -11,7 +11,7 @@ const Work = ({ Image, sapLogo }) => {
     let jobDate = "September 2021- May 2022";
     let jobDescription =
         `
-    I worked as a SAP iXp intern on the BTP Core Platform Services team 
+   SAP iXp intern on the BTP Core Platform Services team 
     where I conducted system analysis, testing, and  debugging. 
     I also examined resource consumption in physical and virtual
     environments(VMware, PowerVM, etc) and optimized resource usage and response times.
@@ -27,6 +27,7 @@ const Work = ({ Image, sapLogo }) => {
     let tag1 = "debugging";
     let tag2 = "database";
     let tag3 = "linux";
+    let showIcons = false;
 
     return (
         <>
@@ -35,7 +36,7 @@ const Work = ({ Image, sapLogo }) => {
                 <h2 className="text-3xl md:text-3xl text-center pt-20 pb-8 text-teal-600 font-semibold dark:text-teal-400">
                     My Work Experience</h2>
 
-                <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap justify-center">
+                <div className="flex flex-col gap-5 lg:flex-row lg:flex-wrap justify-center">
 
                     <CardImage
                         Image={Image}
@@ -43,17 +44,14 @@ const Work = ({ Image, sapLogo }) => {
                         imageCaption={"imageCaption"}
                         imageTitle={jobTitle}
                         imageBody={jobDate}
-                        tag1={tag1}
-                        tag2={tag2}
-                        tag3={tag3}
+                        tags={[tag1, tag2, tag3]}
+                        showIcons={showIcons}
                     />
 
 
                     <CardText
                         textBody={jobDescription}
                     />
-
-
 
                     <CardText
                         textBody={achievements}

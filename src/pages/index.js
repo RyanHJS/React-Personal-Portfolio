@@ -4,8 +4,9 @@ import { Inter } from 'next/font/google';
 
 import avatar from '../../public/static/avatar.jpeg';
 import sapLogo from '../../public/static/sapLogo.png';
-import web1 from '../../public/static/web1.png';
-import web2 from '../../public/static/web2.png';
+import spotify from '../../public/static/spotify.png';
+import medminder from '../../public/static/medminder_cropped.png';
+
 import favicon from '../../public/static/favicon.ico';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -68,7 +69,7 @@ export default function Home() {
                     <div id='project'>
                         {/* Portofolio */}
                         <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                            <Projects web1={web1} web2={web2} Image={Image} sapLogo={sapLogo} />
+                            <Projects Image={Image} spotify={spotify} medminder={medminder} />
                         </motion.div>
                     </div>
                 </section>
