@@ -27,7 +27,7 @@ const Headshot = ({ avatar, Image }) => {
                     md:w-25
                     "
                     >
-                        <Image src={avatar} layout="fill" objectiveFit="cover" />
+                        <Image src={avatar} layout="fill" objectiveFit="cover" alt="" />
                     </div>
                 </motion.div>
             </div>

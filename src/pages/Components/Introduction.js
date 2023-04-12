@@ -25,8 +25,7 @@ const Introduction = () => {
                 />
 
                 <p className="text-md py-8 leading-8 md:text-xl max-w-2xl mx-auto text-gray-800 dark:text-gray-200">
-                    I'm a CS undergrad at SFU with an interest in full-stack development. <br />
-                    I love diving into new technologies to broaden my knowledge and develop new skills to ovecome real-world challenges.
+                    I&apos;m a CS undergrad at SFU with an interest in full-stack development.<br />I love diving into new technologies to broaden my knowledge and develop new skills to ovecome real-world challenges.
                 </p>
 
                 <p className="text-md leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
