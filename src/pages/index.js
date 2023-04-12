@@ -12,6 +12,7 @@ import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Work from './Components/Work';
 import Projects from './Components/Projects';
+import Footer from './Components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,38 +34,48 @@ export default function Home() {
                 <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
             </Head>
 
+            {/* Nav bar */}
+
+            <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+
             <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
 
                 {/* Section 1 */}
                 <section className="min-h-screen">
-                    {/* Nav bar */}
-                    <motion.div key="navbar" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-                    </motion.div>
-                    {/* About me */}
-                    <motion.div key="about" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                        <About Image={Image} avatar={avatar} />
-                    </motion.div>
+                    <div id='about'>
+                        {/* About me */}
+                        <motion.div key="about" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                            <About Image={Image} avatar={avatar} />
+                        </motion.div>
+                    </div>
 
                 </section>
 
                 {/* Section 2 */}
-                <section>
-                    {/* My work Experience */}
-                    <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                        <Work />
-                    </motion.div>
-                    {/* Portofolio */}
-                    <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                        <Projects web1={web1} web2={web2} Image={Image} />
-                    </motion.div>
+                <section className="min-h-screen">
+                    <div id='work'>
+                        {/* My work Experience */}
+                        <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                            <Work />
+                        </motion.div>
+                    </div>
                 </section>
 
-                {/* Footer */}
+                {/* Section 3 */}
+                <section className="min-h-screen">
+                    <div id='project'>
+                        {/* Portofolio */}
+                        <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                            <Projects web1={web1} web2={web2} Image={Image} />
+                        </motion.div>
+                    </div>
+                </section>
+
+                {/* Section 4 */}
                 <section>
-                    <div className='pt-20'>
-                        <p className="font-burtons text-xs text-center dark:text-gray-200">@2023 Ryan He</p>
-                        <p className="font-burtons text-xs text-center dark:text-gray-200">With Inspiration From developedbyed</p>
+                    <div id='footer'>
+                        {/* Footer */}
+                        <Footer />
                     </div>
                 </section>
             </main>
