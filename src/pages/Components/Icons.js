@@ -8,7 +8,7 @@ import {
 
 const Icons = () => {
     return (
-        <div>
+        <div className='py-10'>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <motion.div whileInView={{ opacity: 1 }} whileHover={{ scale: 1.1 }} transition={{ duration: 0.5, type: 'tween' }}>
                     <a href='https://www.linkedin.com/in/ryanhjs/' target="_blank">

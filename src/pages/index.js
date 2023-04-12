@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
+
 import avatar from '../../public/static/avatar.jpeg';
+import sapLogo from '../../public/static/sapLogo.png';
 import web1 from '../../public/static/web1.png';
 import web2 from '../../public/static/web2.png';
 import favicon from '../../public/static/favicon.ico';
@@ -56,7 +58,7 @@ export default function Home() {
                     <div id='work'>
                         {/* My work Experience */}
                         <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                            <Work />
+                            <Work Image={Image} sapLogo={sapLogo} />
                         </motion.div>
                     </div>
                 </section>
@@ -66,7 +68,7 @@ export default function Home() {
                     <div id='project'>
                         {/* Portofolio */}
                         <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                            <Projects web1={web1} web2={web2} Image={Image} />
+                            <Projects web1={web1} web2={web2} Image={Image} sapLogo={sapLogo} />
                         </motion.div>
                     </div>
                 </section>

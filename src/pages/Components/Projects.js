@@ -3,9 +3,10 @@ import React from 'react';
 const Projects = ({ web1, web2, Image }) => {
     return (
         <>
-            <div className='min-h-screen pt-96 pb-20'>
+            <section className='min-h-screen pt-20 pb-96'>
+                <h2 className="text-3xl md:text-3xl text-center pt-20 pb-8 text-teal-600 font-semibold dark:text-teal-400">
+                    My Projects</h2>
                 <div>
-                    <h3 className='text-3xl  font-medium pt-8 pb-2 dark:text-white'>My Projects</h3>
                     <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
                         <div className="basis-1/3 flex-1 ">
                             <Image
@@ -13,7 +14,7 @@ const Projects = ({ web1, web2, Image }) => {
                                 width={"100%"}
                                 height={"100%"}
                                 layout="responsive"
-                                src={web1}
+                                src={web2}
                             />
                         </div>
                         <div className="basis-1/3 flex-1">
@@ -27,7 +28,7 @@ const Projects = ({ web1, web2, Image }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     );
 };
