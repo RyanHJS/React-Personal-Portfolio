@@ -37,10 +37,9 @@ const Work = ({ sapLogo }) => {
                 <h2 className="text-3xl md:text-3xl text-center pt-20 pb-8 text-teal-600 font-semibold dark:text-teal-400">
                     My Work Experience</h2>
 
-                <div className="flex flex-col gap-5 lg:flex-row lg:flex-wrap justify-center">
+                <div className="flex flex-col items-center gap-5 justify-center">
 
                     <CardImage
-                        Image={Image}
                         imageSrc={sapLogo}
                         imageCaption={"imageCaption"}
                         imageTitle={jobTitle}
@@ -58,8 +57,8 @@ const Work = ({ sapLogo }) => {
                         textBody={achievements}
                     />
 
-
                 </div>
+
 
             </section>
         </>

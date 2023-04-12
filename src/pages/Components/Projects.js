@@ -28,8 +28,8 @@ const Projects = ({ spotify, medminder }) => {
                 <h2 className="text-3xl md:text-3xl text-center pt-20 pb-8 text-teal-600 font-semibold dark:text-teal-400">
                     My Projects</h2>
                 <div>
-                    <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                        <div className="basis-1/3 flex-1 ">
+                    <div className="max-w-screen flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap lg:justify-center">
+                        <div className="flex-basis-1/3 ">
 
                             <CardImage
                                 imageSrc={spotify}
@@ -42,7 +42,7 @@ const Projects = ({ spotify, medminder }) => {
                                 githubLink={spotifyGithubLink}
                             />
                         </div>
-                        <div className="basis-1/3 flex-1">
+                        <div className="flex-basis-1/3 ">
 
                             <CardImage
                                 imageSrc={medminder}

@@ -13,7 +13,7 @@ const CardText = ({ textTitle, textBody }) => {
                 >
                     <div class="max-w-xl bg-white px-15 dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden max-h-fit">
 
-                        <div class="px-6">
+                        <div class="px-6 py-2">
                             <div class="font-bold text-xl mb-2 text-gray-800 dark:text-white"> {textTitle ? textTitle : ""}
                             </div>
                             <p class="text-gray-800 text-base text-center dark:text-white">
