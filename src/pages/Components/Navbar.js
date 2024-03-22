@@ -16,7 +16,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <div className="container mx-auto flex items-center justify-between">
                     <h1 className="font-burtons text-xl animate-bounce hidden sm:flex">Ryan He</h1>
 
-                    <ul className="items-center hidden sm:flex">
+                    {/* <ul className="items-center hidden sm:flex">
                         <li>
                             <motion.div
                                 whileInView={{ opacity: 1 }}
@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                         <NavLink anchorLink={'/static/resume.pdf'}
                             anchorTitle={'Resume'}
                             extraStyle={'bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white border-none'} />
-                    </ul>
+                    </ul> */}
                 </div>
 
                 <div className="container mx-auto flex items-center justify-center">
