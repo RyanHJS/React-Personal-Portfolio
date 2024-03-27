@@ -9,9 +9,9 @@ import monerisLogo from '../../../public/static/monerisLogo.jpeg'
 import activisionLogo from '../../../public/static/activisionLogo.jpeg'
 
 const Work = () => {
-  let sapJobTitle = "Software Logistics Engineer (BTP Core Platform Services)";
-  let monerisJobTitle = "Software Logistics Engineer (BTP Core Platform Services)";
-  let activisionJobTitle = "Software Logistics Engineer (BTP Core Platform Services)";
+  let sapJobTitle = "Software Logistics Engineer Intern";
+  let monerisJobTitle = "Software Engineer Intern";
+  let activisionJobTitle = "Front end Developer Intern";
   let sapJobDate = "Sep 2021 - May 2022";
   let monerisJobDate = "Sep 2023 - May 2024";
   let activisionJobDate = "May 2024 - Aug 2024";
