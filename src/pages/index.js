@@ -3,9 +3,6 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 
 import avatar from '../../public/static/avatar.jpeg';
-import sapLogo from '../../public/static/sapLogo.png';
-import spotify from '../../public/static/spotify.png';
-import medminder from '../../public/static/medminder_cropped.png';
 
 import favicon from '../../public/static/favicon.ico';
 import { useState } from 'react';
@@ -59,7 +56,7 @@ export default function Home() {
                     <div id='work'>
                         {/* My work Experience */}
                         <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                            <Work sapLogo={sapLogo} />
+                            <Work/>
                         </motion.div>
                     </div>
                 </section>
@@ -69,7 +66,7 @@ export default function Home() {
                     <div id='project'>
                         {/* Portofolio */}
                         <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
-                            <Projects spotify={spotify} medminder={medminder} />
+                            <Projects/>
                         </motion.div>
                     </div>
                 </section>
