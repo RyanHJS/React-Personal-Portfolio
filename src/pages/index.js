@@ -52,24 +52,24 @@ export default function Home() {
                 </section>
 
                 {/* Section 2 */}
-                <section className="min-h-screen">
-                    <div id='work'>
                         {/* My work Experience */}
+                {/* <section className="min-h-screen">
+                    <div id='work'>
                         <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
                             <Work/>
                         </motion.div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Section 3 */}
-                <section className="min-h-screen">
-                    <div id='project'>
                         {/* Portofolio */}
+                {/* <section className="min-h-screen">
+                    <div id='project'>
                         <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
                             <Projects/>
                         </motion.div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Section 4 */}
                 <section>

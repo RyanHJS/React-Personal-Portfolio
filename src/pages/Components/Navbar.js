@@ -35,8 +35,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <div className="container mx-auto flex items-center justify-center">
                     <ul className="flex items-center justify-center">
                         <NavLink anchorLink={'#about'} anchorTitle={'About'} />
-                        <NavLink anchorLink={'#work'} anchorTitle={'Work'} />
-                        <NavLink anchorLink={'#project'} anchorTitle={'Project'} />
+                        {/* <NavLink anchorLink={'#work'} anchorTitle={'Work'} />
+                        <NavLink anchorLink={'#project'} anchorTitle={'Project'} /> */}
                     </ul>
                 </div>
             </nav >
