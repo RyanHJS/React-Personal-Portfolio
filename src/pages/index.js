@@ -1,15 +1,18 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
+
 import avatar from '../../public/static/avatar.jpeg';
-import web1 from '../../public/static/web1.png';
-import web2 from '../../public/static/web2.png';
+
 import favicon from '../../public/static/favicon.ico';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Work from './Components/Work';
+import Projects from './Components/Projects';
+import Footer from './Components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,52 +34,48 @@ export default function Home() {
                 <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
             </Head>
 
+            {/* Nav bar */}
+
+            <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+
             <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
 
                 {/* Section 1 */}
                 <section className="min-h-screen">
-                    {/* Nav bar */}
-                    <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-                    {/* About me */}
-                    <About Image={Image} avatar={avatar} />
-                </section>
-
-                {/* Section 2 */}
-                <section>
-                    {/* My work Experience */}
-                    <Work />
-                    {/* Portofolio */}
-                    <div>
-                        <h3 className='text-3xl  font-medium pt-8 pb-2 dark:text-white'>My Projects</h3>
-                        <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                            <div className="basis-1/3 flex-1 ">
-                                <Image
-                                    className="rounded-lg object-cover"
-                                    width={"100%"}
-                                    height={"100%"}
-                                    layout="responsive"
-                                    src={web1}
-                                />
-                            </div>
-                            <div className="basis-1/3 flex-1">
-                                <Image
-                                    className="rounded-lg object-cover"
-                                    width={"100%"}
-                                    height={"100%"}
-                                    layout="responsive"
-                                    src={web2}
-                                />
-                            </div>
-                        </div>
+                    <div id='about'>
+                        {/* About me */}
+                        <motion.div key="about" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                            <About avatar={avatar} />
+                        </motion.div>
                     </div>
 
                 </section>
 
-                {/* Footer */}
+                {/* Section 2 */}
+                        {/* My work Experience */}
+                {/* <section className="min-h-screen">
+                    <div id='work'>
+                        <motion.div key="work" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                            <Work/>
+                        </motion.div>
+                    </div>
+                </section> */}
+
+                {/* Section 3 */}
+                        {/* Portofolio */}
+                {/* <section className="min-h-screen">
+                    <div id='project'>
+                        <motion.div key="project" whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }} transition={{ duration: 0.5 }}>
+                            <Projects/>
+                        </motion.div>
+                    </div>
+                </section> */}
+
+                {/* Section 4 */}
                 <section>
-                    <div className='pt-20'>
-                        <p className="font-burtons text-xs text-center dark:text-gray-200">@2023 Ryan He</p>
-                        <p className="font-burtons text-xs text-center dark:text-gray-200">With Inspiration From developedbyed</p>
+                    <div id='footer'>
+                        {/* Footer */}
+                        <Footer />
                     </div>
                 </section>
             </main>
