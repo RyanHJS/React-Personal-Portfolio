@@ -38,7 +38,7 @@ const Introduction = () => {
                 </p>
 
                 <p className="text-md leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-200">
-                    <br />Click on my social links to learn more about my work and get in touch. Always open to new opportunities!
+                    <br />Click on my social links to learn more about me and my work. Let's connect and create something amazing together!
                 </p>
             </div>
         </div>

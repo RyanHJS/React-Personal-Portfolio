@@ -16,7 +16,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <div className="container mx-auto flex items-center justify-between">
                     <h1 className="font-burtons text-xl animate-bounce hidden sm:flex">Ryan He</h1>
 
-                    {/* <ul className="items-center hidden sm:flex">
+                    <ul className="items-center hidden sm:flex">
                         <li>
                             <motion.div
                                 whileInView={{ opacity: 1 }}
@@ -26,15 +26,15 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" />
                             </motion.div>
                         </li>
-                        <NavLink anchorLink={'/static/resume.pdf'}
+                        {/* <NavLink anchorLink={'/static/resume.pdf'}
                             anchorTitle={'Resume'}
-                            extraStyle={'bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white border-none'} />
-                    </ul> */}
+                            extraStyle={'bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white border-none'} /> */}
+                    </ul> 
                 </div>
 
                 <div className="container mx-auto flex items-center justify-center">
                     <ul className="flex items-center justify-center">
-                        {/* <NavLink anchorLink={'#about'} anchorTitle={'About'} /> */}
+                        <NavLink anchorLink={'#about'} anchorTitle={'About'} />
                         {/* <NavLink anchorLink={'#work'} anchorTitle={'Work'} />
                         <NavLink anchorLink={'#project'} anchorTitle={'Project'} /> */}
                     </ul>
