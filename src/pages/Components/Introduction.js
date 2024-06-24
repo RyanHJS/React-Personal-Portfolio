@@ -9,7 +9,7 @@ const Introduction = () => {
                 <h2 className="text-5xl pt-20 pb-8 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
                     Hi! My name is Ryan He,
                 </h2>
-
+                <div className='sm:flex justify-center items-center hidden'>
                 <TypeAnimation
                     sequence={[
                         'I am a Computer Science Major ',
@@ -23,7 +23,8 @@ const Introduction = () => {
                     cursor={true}
                     repeat={Infinity}
                     className='text-2xl md:text-3xl py-2 dark:text-white'
-                />
+                    />
+                </div>
 
                 <p className="text-md py-8 leading-8 md:text-xl max-w-2xl mx-auto text-gray-800 dark:text-gray-200">
                     I am a Software Development Engineer based in Vancouver, passionate about exploring new technologies to tackle real-world challenges.
