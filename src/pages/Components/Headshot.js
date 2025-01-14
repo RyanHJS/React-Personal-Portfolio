@@ -6,7 +6,6 @@ const Headshot = ({ }) => {
     return (
         <div>
             <div>
-
                 <motion.div
                     whileInView={{ opacity: 1 }}
                     whileHover={{ scale: 1.1 }}
