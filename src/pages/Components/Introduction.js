@@ -43,13 +43,16 @@ const Introduction = () => {
           >
             <span className="font-bold text-teal-600 dark:text-teal-400 border-teal-600">
               {" "}
-              &#x2022; RBC Borealis AI - building ML pipelines that power credit adjudication and deliver decisions 🧠
+              &#x2022;RBC Borealis AI - building ML pipelines that power credit adjudication and deliver decisions 🧠
               <br />
-              &#x2022; Activision Experience Optimization - Call of Duty: Black Ops 6 🔫
               <br />
-              &#x2022; Moneris Go Restaurant POS - Mobile Team 📱Moneris Go Restaurant POS - Mobile Team 📱
+              &#x2022;Activision Experience Optimization - Call of Duty: Black Ops 6 🔫
               <br />
-              &#x2022; SAP Business Technology Platform - Software Logistics Team 👷‍♂️
+              <br />
+              &#x2022;Moneris Go Restaurant POS - Mobile Team 📱
+              <br />
+              <br />
+              &#x2022;SAP Business Technology Platform - Software Logistics Team 👷‍♂️
             </span>
           </motion.div>
         </p>
